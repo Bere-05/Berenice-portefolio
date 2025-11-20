@@ -464,5 +464,47 @@ footer {
 
     .skills-grid {
         grid-template-columns: 1fr;
+        .contact-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 280px;
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+    z-index: 999;
+}
+
+.contact-popup h3 {
+    margin-top: 0;
+}
+
+.contact-popup button {
+    margin-top: 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cta-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
     }
 }
