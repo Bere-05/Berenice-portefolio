@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bérénice - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- AJOUT : Style popup + animation -->
+    <style>
+        .contact-popup {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            width: 280px;
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+            z-index: 999;
+        }
+
+        .contact-popup h3 {
+            margin-top: 0;
+        }
+
+        .contact-popup button {
+            margin-top: 15px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .cta-button {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.06);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -249,27 +294,29 @@
         <p>© 2025 Bérénice - Tous droits réservés</p>
         <p class="footer-quote">"La persévérance est la clé du succès"</p>
     </footer>
+
+    <!-- AJOUT : POPUP CONTACT -->
     <div class="contact-popup" id="contactPopup">
-    <h3>Me Contacter</h3>
-    <p><strong>Téléphone :</strong> <a href="tel:0784946976">07 84 94 69 76</a></p>
-    <p><strong>Email ILEPS :</strong> <a href="mailto:b.wehner@ileps.fr">b.wehner@ileps.fr</a></p>
-    <p><strong>Email perso :</strong> <a href="mailto:wehnerberenice@gmail.com">wehnerberenice@gmail.com</a></p>
-    <button id="closeContact">Fermer</button>
-</div>
+        <h3>Me Contacter</h3>
+        <p><strong>Téléphone :</strong> <a href="tel:0784946976">07 84 94 69 76</a></p>
+        <p><strong>Email ILEPS :</strong> <a href="mailto:b.wehner@ileps.fr">b.wehner@ileps.fr</a></p>
+        <p><strong>Email perso :</strong> <a href="mailto:wehnerberenice@gmail.com">wehnerberenice@gmail.com</a></p>
+        <button id="closeContact">Fermer</button>
+    </div>
 
-<!-- SCRIPT D’INTERACTION -->
-<script>
-    const openBtn = document.querySelector('.cta-button');
-    const popup = document.getElementById('contactPopup');
-    const closeBtn = document.getElementById('closeContact');
+    <!-- AJOUT : SCRIPT -->
+    <script>
+        const openBtn = document.querySelector('.cta-button');
+        const popup = document.getElementById('contactPopup');
+        const closeBtn = document.getElementById('closeContact');
 
-    openBtn.addEventListener('click', () => {
-        popup.style.display = 'block';
-    });
+        openBtn.addEventListener('click', () => {
+            popup.style.display = 'block';
+        });
 
-    closeBtn.addEventListener('click', () => {
-        popup.style.display = 'none';
-    });
-</script>
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
