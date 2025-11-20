@@ -5,52 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bérénice - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Animation simple -->
-    <style>
-        .cta-button {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        .cta-button:hover {
-            transform: scale(1.06);
-            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-        }
-
-        /* Popup contact */
-        .contact-popup {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
-            width: 280px;
-            display: none;
-            animation: fadeIn 0.4s ease forwards;
-            z-index: 999;
-        }
-        .contact-popup h3 {
-            margin-top: 0;
-        }
-        .contact-popup button {
-            margin-top: 10px;
-            background: #e74c3c;
-            border: none;
-            padding: 8px 14px;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
 </head>
-
 <body>
     <header>
         <nav>
@@ -65,14 +20,228 @@
         </nav>
     </header>
 
-    <!-- TON CODE ORIGINAL ICI (inchangé) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bérénice</h1>
+            <p class="subtitle">Athlète de Haut Niveau | Alternante en Marketing du Sport</p>
+            <p class="quote">"La persévérance est la clé du succès"</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Qui suis-je ?</h2>
+            <div class="about-content">
+                <p>Bonjour ! Je m'appelle Bérénice, j'ai 20 ans et je suis une passionnée du sport sous toutes ses formes. Actuellement en troisième année de licence Commerce et Marketing du Sport à l'ILEPS, je conjugue mes études avec mon statut d'athlète de haut niveau en saut à la perche et mon alternance chez Maison du Running.</p>
+                
+                <p>Ce qui me définit ? Je suis <strong>persévérante</strong>, <strong>organisée</strong>, <strong>responsable</strong> et <strong>curieuse</strong>. Je mets tout en œuvre pour être performante, que ce soit sur la piste d'athlétisme ou dans mes projets professionnels. Mon parcours sportif m'a appris la rigueur, la gestion du stress et l'ambition, des qualités que je transpose naturellement dans le monde professionnel.</p>
+
+                <p>Mes valeurs ? La persévérance, l'esprit d'équipe, la curiosité et la performance. J'aime relever des défis, apprendre continuellement et contribuer au succès collectif.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="section alt-bg">
+        <div class="container">
+            <h2>Mon Parcours</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Formation Actuelle</h3>
+                        <p class="timeline-date">2022 - 2025</p>
+                        <p><strong>Licence Commerce et Marketing du Sport</strong> - ILEPS (3ème année)</p>
+                        <p>Formation complète alliant théorie marketing, gestion de projet et pratique sportive. Cursus en alternance permettant une immersion professionnelle concrète.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat Général</h3>
+                        <p class="timeline-date">2022</p>
+                        <p><strong>Spécialités SVT et SES</strong></p>
+                        <p>Une formation générale qui m'a permis de développer mon esprit d'analyse et ma curiosité scientifique et économique.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Carrière Sportive</h3>
+                        <p class="timeline-date">En cours</p>
+                        <p><strong>Athlète de Haut Niveau - Saut à la Perche</strong></p>
+                        <p>Médaillée nationale, je conjugue entraînements intensifs et compétitions de haut niveau. Cette expérience forge mon caractère et nourrit ma détermination au quotidien.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-highlight">
+                <h3>Projet Marquant</h3>
+                <p><strong>Organisation d'événement en Écosse</strong> - Lors d'un séminaire à l'étranger, notre équipe a organisé l'intégralité d'un événement autour d'un match de rugby. Ce projet mené entièrement en anglais a été une expérience enrichissante qui a renforcé mes compétences en gestion de projet, communication interculturelle et travail d'équipe. Un véritable challenge qui m'a fait sortir de ma zone de confort !</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="section">
+        <div class="container">
+            <h2>Mes Compétences</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Compétences Techniques</h3>
+                    <ul>
+                        <li>Marketing et communication</li>
+                        <li>Gestion de projet</li>
+                        <li>Conseil client</li>
+                        <li>Animation réseaux sociaux</li>
+                        <li>Maîtrise d'Excel et Canva</li>
+                        <li>Prospection et négociation</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Persévérance et détermination</li>
+                        <li>Organisation et rigueur</li>
+                        <li>Esprit d'équipe</li>
+                        <li>Gestion du stress</li>
+                        <li>Autonomie</li>
+                        <li>Responsabilité et engagement</li>
+                        <li>Curiosité et soif d'apprendre</li>
+                        <li>Sociabilité et sens du contact</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Langues</h3>
+                    <ul>
+                        <li>Français - Langue maternelle</li>
+                        <li>Anglais - Niveau avancé (projet en Écosse)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="section alt-bg">
+        <div class="container">
+            <h2>Mes Expériences Professionnelles</h2>
+            
+            <div class="experience-list">
+                <div class="experience-card">
+                    <h3>Alternante Marketing & Vente</h3>
+                    <p class="experience-company">Maison du Running</p>
+                    <p class="experience-date">Depuis 2023 (1 an)</p>
+                    <p class="experience-description">
+                        Mon alternance actuelle m'a permis de découvrir concrètement le monde professionnel et de développer mon autonomie. Au quotidien, je gère le conseil client, anime les réseaux sociaux de l'enseigne, participe à la création de contenus visuels sur Canva, et contribue à la gestion de projets marketing. Cette expérience m'a apporté une vision complète du commerce spécialisé dans le running, de la relation client à la stratégie digitale.
+                    </p>
+                    <p class="skills-acquired"><strong>Compétences acquises :</strong> Autonomie, conseil client, communication digitale, gestion Excel, création graphique, organisation, esprit d'équipe, gestion de projet.</p>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Stagiaire Marketing & Communication</h3>
+                    <p class="experience-company">Comité Départemental Olympique et Sportif</p>
+                    <p class="experience-date">2 mois</p>
+                    <p class="experience-description">
+                        Mission au cœur du mouvement sportif territorial. J'ai participé à l'organisation d'événements sportifs, à la communication institutionnelle et à la promotion des valeurs olympiques. Cette expérience m'a sensibilisée aux enjeux du sport pour tous et à l'importance de la structure fédérale.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Stagiaire Animation Sportive</h3>
+                    <p class="experience-company">EACPA - Club d'Athlétisme de Cergy</p>
+                    <p class="experience-date">2 mois</p>
+                    <p class="experience-description">
+                        Immersion dans la gestion d'un club d'athlétisme. J'ai participé à l'encadrement de jeunes athlètes, à l'organisation de compétitions et à la vie associative du club. Une expérience qui fait écho à mon parcours sportif personnel et qui m'a confortée dans mon envie de rester proche du terrain.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Baby-sitter</h3>
+                    <p class="experience-company">Particuliers</p>
+                    <p class="experience-date">Plusieurs années</p>
+                    <p class="experience-description">
+                        Activité régulière qui m'a appris la responsabilité, l'adaptation et la patience. Gérer des enfants de différents âges demande écoute, créativité et organisation, des qualités que je mobilise également dans mes autres activités professionnelles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reussites" class="section">
+        <div class="container">
+            <h2>Ma Plus Grande Fierté</h2>
+            <div class="achievement">
+                <div class="achievement-content">
+                    <h3>Athlète de Haut Niveau - Médaillée Nationale</h3>
+                    <p>Mon statut d'athlète de haut niveau et mes médailles nationales en saut à la perche représentent l'aboutissement de nombreuses années de travail, de sacrifices et de détermination. Cette réussite sportive m'a forgée et m'a transmis des valeurs essentielles :</p>
+                    <ul>
+                        <li><strong>La gestion du stress :</strong> Savoir performer sous pression, que ce soit lors d'une compétition ou dans un contexte professionnel.</li>
+                        <li><strong>La persévérance :</strong> Ne jamais abandonner face aux échecs, apprendre de ses erreurs et toujours se relever.</li>
+                        <li><strong>L'esprit de compétition :</strong> Se fixer des objectifs ambitieux et tout mettre en œuvre pour les atteindre.</li>
+                        <li><strong>L'ambition :</strong> Viser l'excellence dans tout ce que j'entreprends.</li>
+                    </ul>
+                    <p>Ce parcours sportif est bien plus qu'une passion, c'est une école de vie qui nourrit quotidiennement mon approche professionnelle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aspirations" class="section alt-bg">
+        <div class="container">
+            <h2>Mes Aspirations</h2>
+            
+            <div class="aspirations-content">
+                <div class="aspiration-card">
+                    <h3>Court Terme - 2025</h3>
+                    <p><strong>Master aux États-Unis</strong></p>
+                    <p>Mon prochain challenge est de partir poursuivre un master aux USA. Cette expérience me permettra de conjuguer mon haut niveau sportif avec une formation internationale de qualité, tout en m'immergeant dans une nouvelle culture et en perfectionnant mon anglais.</p>
+                </div>
+
+                <div class="aspiration-card">
+                    <h3>Long Terme - Vision Professionnelle</h3>
+                    <p><strong>Travailler dans la Rééducation</strong></p>
+                    <p>Mon projet professionnel s'oriente vers un métier au contact des gens, dans le domaine de la rééducation. Je me vois évoluer soit dans le sport de haut niveau (accompagnement d'athlètes), soit auprès des personnes âgées. Ce qui m'anime ? Aider les autres, être sociable, et mettre mes compétences au service de l'humain. Je souhaite exercer un métier où je peux faire la différence dans la vie des personnes que j'accompagne.</p>
+                </div>
+
+                <div class="aspiration-card">
+                    <h3>Compétences à Développer</h3>
+                    <ul>
+                        <li>Approfondissement des connaissances en rééducation sportive</li>
+                        <li>Perfectionnement de l'anglais dans un contexte international</li>
+                        <li>Développement de compétences en accompagnement et coaching</li>
+                        <li>Expertise dans la prévention et la récupération sportive</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="passions" class="section">
+        <div class="container">
+            <h2>Au-delà du Professionnel</h2>
+            <div class="passions-content">
+                <div class="passion-item">
+                    <h3>🏃‍♀️ Athlétisme</h3>
+                    <p>Le saut à la perche est bien plus qu'un sport pour moi, c'est une passion qui rythme mon quotidien et façonne ma personnalité.</p>
+                </div>
+                <div class="passion-item">
+                    <h3>✈️ Voyages</h3>
+                    <p>J'adore découvrir de nouvelles cultures, explorer de nouveaux horizons et m'enrichir de chaque rencontre. Chaque voyage est une opportunité d'apprentissage et d'ouverture d'esprit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="section cta-section">
         <div class="container">
             <h2>Travaillons Ensemble</h2>
             <p class="cta-text">Vous recherchez une personne persévérante, organisée et passionnée ? Une professionnelle qui allie rigueur sportive et compétences marketing ? Je serais ravie d'échanger avec vous sur des opportunités de collaboration, de stage ou d'emploi.</p>
             <p class="cta-highlight">Ce que je recherche particulièrement : des opportunités dans le domaine du sport, de la rééducation, ou tout poste alliant contact humain et performance.</p>
-            <button class="cta-button" id="openContact">Me Contacter</button>
+            <button class="cta-button">Me Contacter</button>
         </div>
     </section>
 
@@ -80,29 +249,27 @@
         <p>© 2025 Bérénice - Tous droits réservés</p>
         <p class="footer-quote">"La persévérance est la clé du succès"</p>
     </footer>
-
-    <!-- POPUP CONTACT -->
     <div class="contact-popup" id="contactPopup">
-        <h3>Contact</h3>
-        <p><strong>Téléphone :</strong> <a href="tel:0784946976">07 84 94 69 76</a></p>
-        <p><strong>Email ILEPS :</strong> <a href="mailto:b.wehner@ileps.fr">b.wehner@ileps.fr</a></p>
-        <p><strong>Email perso :</strong> <a href="mailto:wehnerberenice@gmail.com">wehnerberenice@gmail.com</a></p>
-        <button id="closeContact">Fermer</button>
-    </div>
+    <h3>Me Contacter</h3>
+    <p><strong>Téléphone :</strong> <a href="tel:0784946976">07 84 94 69 76</a></p>
+    <p><strong>Email ILEPS :</strong> <a href="mailto:b.wehner@ileps.fr">b.wehner@ileps.fr</a></p>
+    <p><strong>Email perso :</strong> <a href="mailto:wehnerberenice@gmail.com">wehnerberenice@gmail.com</a></p>
+    <button id="closeContact">Fermer</button>
+</div>
 
-    <!-- SCRIPT INTERACTION -->
-    <script>
-        const openBtn = document.getElementById('openContact');
-        const popup = document.getElementById('contactPopup');
-        const closeBtn = document.getElementById('closeContact');
+<!-- SCRIPT D’INTERACTION -->
+<script>
+    const openBtn = document.querySelector('.cta-button');
+    const popup = document.getElementById('contactPopup');
+    const closeBtn = document.getElementById('closeContact');
 
-        openBtn.addEventListener('click', () => {
-            popup.style.display = 'block';
-        });
+    openBtn.addEventListener('click', () => {
+        popup.style.display = 'block';
+    });
 
-        closeBtn.addEventListener('click', () => {
-            popup.style.display = 'none';
-        });
-    </script>
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+</script>
 </body>
 </html>
