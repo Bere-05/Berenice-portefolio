@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bérénice - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Animation simple -->
+    <style>
+        .cta-button {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            transform: scale(1.06);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        /* Popup contact */
+        .contact-popup {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+            width: 280px;
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+            z-index: 999;
+        }
+        .contact-popup h3 {
+            margin-top: 0;
+        }
+        .contact-popup button {
+            margin-top: 10px;
+            background: #e74c3c;
+            border: none;
+            padding: 8px 14px;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#aspirations">Aspirations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- TON CODE ORIGINAL ICI (inchangé) -->
+
+    <section id="contact" class="section cta-section">
+        <div class="container">
+            <h2>Travaillons Ensemble</h2>
+            <p class="cta-text">Vous recherchez une personne persévérante, organisée et passionnée ? Une professionnelle qui allie rigueur sportive et compétences marketing ? Je serais ravie d'échanger avec vous sur des opportunités de collaboration, de stage ou d'emploi.</p>
+            <p class="cta-highlight">Ce que je recherche particulièrement : des opportunités dans le domaine du sport, de la rééducation, ou tout poste alliant contact humain et performance.</p>
+            <button class="cta-button" id="openContact">Me Contacter</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Bérénice - Tous droits réservés</p>
+        <p class="footer-quote">"La persévérance est la clé du succès"</p>
+    </footer>
+
+    <!-- POPUP CONTACT -->
+    <div class="contact-popup" id="contactPopup">
+        <h3>Contact</h3>
+        <p><strong>Téléphone :</strong> <a href="tel:0784946976">07 84 94 69 76</a></p>
+        <p><strong>Email ILEPS :</strong> <a href="mailto:b.wehner@ileps.fr">b.wehner@ileps.fr</a></p>
+        <p><strong>Email perso :</strong> <a href="mailto:wehnerberenice@gmail.com">wehnerberenice@gmail.com</a></p>
+        <button id="closeContact">Fermer</button>
+    </div>
+
+    <!-- SCRIPT INTERACTION -->
+    <script>
+        const openBtn = document.getElementById('openContact');
+        const popup = document.getElementById('contactPopup');
+        const closeBtn = document.getElementById('closeContact');
+
+        openBtn.addEventListener('click', () => {
+            popup.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
