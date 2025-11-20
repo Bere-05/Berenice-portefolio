@@ -423,7 +423,17 @@ footer {
     margin-top: 1rem;
     opacity: 0.8;
 }
+.mini-photo {
+    width: 200px;        /* Taille de l’image */
+    height: auto;        /* Pour garder les proportions */
+    border-radius: 10px; /* Optionnel : des coins arrondis */
+    margin: 10px;        /* Petit espace autour */
+    transition: transform 0.3s ease;
+}
 
+.mini-photo:hover {
+    transform: scale(1.1); /* Zoom au survol */
+}
 /* Responsive */
 @media (max-width: 768px) {
     .hero-content h1 {
@@ -505,16 +515,6 @@ footer {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-    .mini-photo {
-    width: 200px;        /* Taille de l’image */
-    height: auto;        /* Pour garder les proportions */
-    border-radius: 10px; /* Optionnel : des coins arrondis */
-    margin: 10px;        /* Petit espace autour */
-    transition: transform 0.3s ease;
-}
-
-.mini-photo:hover {
-    transform: scale(1.1); /* Zoom au survol */
-}
+    
     }
 }
